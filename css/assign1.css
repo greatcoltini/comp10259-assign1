@@ -1,0 +1,15 @@
+a {
+    color: black;
+}
+
+
+@keyframes name_animation {
+    0% {transform: translate(-30vw);}
+    100% {transform: translate(110vw);}
+}
+
+.animated {
+    animation-name: name_animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
