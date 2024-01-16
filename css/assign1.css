@@ -2,14 +2,38 @@ a {
     color: black;
 }
 
+h1 {
+    overflow: hidden;  
+}
+
 
 @keyframes name_animation {
     0% {transform: translate(-30vw);}
+    25% {transform: translate(40vw);
+        color: blue;
+        box-shadow: 10px 10px 5px lightblue;}
+    50% {transform: translate(40vw);
+        color: black;
+        box-shadow: none;}
     100% {transform: translate(110vw);}
 }
 
 .animated {
     animation-name: name_animation;
-    animation-duration: 4s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
+}
+
+.hover-excite {
+    transition: 2s;
+}
+
+.hover-excite:hover:not(.active) {
+    background-color: grey;
+    transform: rotateY(330deg);
+}
+
+.center {
+    margin: auto;
+    width: 50%;
 }
