@@ -7,6 +7,7 @@ body {
 }
 
 
+/* Animations section; using animations for the initial student name website name */
 @keyframes name_animation {
     0% {transform: translate(-30%);}
     25% {transform: translate(40%);
